@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.androidtown.me.MainActivity">
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:text="현재 시간 나타내기"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold" />
+    <ImageButton
+        android:id="@+id/setButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:background="@drawable/set_gear"
+        android:contentDescription="set_gear"
+        android:onClick="setButtonCliked"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:text="설정"/>
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="입력하세요" />
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="저장"
+        android:textSize="20dp"
+        android:onClick="saveButtonClicked"
+        android:layout_gravity="right"/>
+
+</LinearLayout>
