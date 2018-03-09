@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <HorizontalScrollView
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:id="@+id/scrollView01">
+
+        <ScrollView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/imageView01"
+        android:scaleType="matrix"/>
+        </ScrollView>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/button01"
+        android:textSize="18dp"
+        android:text=" ▲ "
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/button02"
+        android:textSize="18dp"
+        android:text=" ▼ "
+        android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+    <HorizontalScrollView
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:id="@+id/scrollView02"
+        android:layout_alignParentBottom="true">
+
+
+        <ScrollView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/imageView02"
+                android:scaleType="matrix"/>
+
+        </ScrollView>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>
